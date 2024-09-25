@@ -1,9 +1,5 @@
 @inject HttpClient HttpClient
 
-@code {
-    [Parameter] public Pizza Pizza { get; set; }
-}
-
 <div class="dialog-container">
     <div class="dialog">
         <div class="dialog-title">
@@ -31,7 +27,7 @@
 </div>
 
 @code {
-    <!--[Parameter] public Pizza Pizza { get; set; }-->
+    [Parameter] public Pizza Pizza { get; set; }
     [Parameter] public EventCallback OnCancel { get; set; }
     [Parameter] public EventCallback OnConfirm { get; set; }
 }
